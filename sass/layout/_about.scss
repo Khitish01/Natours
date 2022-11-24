@@ -1,0 +1,113 @@
+.section-2 {
+  background-color: #f7f7f7;
+  padding-top: 40vh;
+  margin-top: -20vh;
+  // padding-bottom: 20rem;
+  &-header {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transition: all .2s;
+  }
+  &-header:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+}
+.row {
+  max-width: 100rem;
+  margin: 0 auto;
+  &-1 {
+    margin-bottom: 5rem;
+  }
+}
+.col-6 {
+}
+.col-lg-6{
+  // width: calc((100% - 6rem) / 2) !important;
+  // padding: 0 5rem;
+}
+
+.img-section {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  
+  z-index: 2;
+  .img {
+    position: absolute;
+    // width: 55%;
+    transition: all 0.4s;
+    outline-offset: 1.5rem;
+    border-radius: 5px;
+    &:hover{
+      transform: scale(1.1);
+      z-index: 1;
+      outline: .9rem solid $color-primary;
+    }
+  }
+  .img-1 {
+    top: 0;
+    left: 0;
+  }
+  .img-2 {
+    top: 40px;
+    left: 250px;
+  }
+  .img-3 {
+    top: 110px;
+    left: 110px;
+  }
+}
+.padding {
+  padding: 0 auto;
+}
+h6 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+p {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.info-link:link,
+.info-link:visited {
+  color: $color-primary;
+  margin-bottom: 0.5rem;
+  // background-image: linear-gradient(
+  //   120deg,
+  //   transparent 0%,
+  //   transparent 50%,
+  //   #fff 50%
+  // );
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid $color-primary;
+  padding: 0.4rem 0.2rem;
+  transition: all 0.2s;
+}
+.info-link:link:hover {
+  background-color: $color-primary;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.149);
+  transform: translateY(-2px);
+}
+.info-link:hover{
+  color: $color-white;
+
+}
+.info-link::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: $color-primary;
+}
